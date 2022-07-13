@@ -29,6 +29,16 @@ module.exports = {
   },
 
   module: {
-    rules: []
+    rules: [
+      {
+        test: /jsx?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/env', '@babel/react'],
+          plugins: ['@babel/plugin-transform-runtime', '@babel/transform-async-to-generator'],
+        },
+      }
+    ]
   }
 };

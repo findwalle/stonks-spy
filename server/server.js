@@ -1,3 +1,4 @@
+const { application } = require('express');
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -19,6 +20,17 @@ app.get('/api/dummyData', (req, res) => {
 })
 
 // for production code blocks
+if  (process.env.NODE_ENV === 'production'){
+  console.log('yes')
+  // statically serve everything in the build folder on the route '/build'
+  app.use('/build', express.static(path.resolve(__dirname, '../build')));
+  // serve index.html on the route '/'
+  app.get('/', (req, res) => {
+    console.log('here')
+    // return res.status(200).sendFile(path.resolve(__dirname, '../index.html'));
+    return res.status(200).send('hello there')
+  });
+}
 
 
 // 404 handle block
