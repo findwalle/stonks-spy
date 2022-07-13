@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import GraphContainer from './containers/GraphContainer.jsx';
+import MetricContainer from './containers/MetricContainer.jsx';
 import Watchlist from './containers/Watchlist.jsx';
 
 const App = () => (
-  <div id="app" style="border: 1px solid">
+  <div id="app">
     <GraphContainer />
+    <MetricContainer />
     <Watchlist />
   </div>
 );

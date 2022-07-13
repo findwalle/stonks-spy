@@ -1,0 +1,27 @@
+#graphContainer {
+  grid-area: graphContainer;
+
+  border: 1px solid $primary;
+  // width: 70%;
+  // height: 60%;
+  margin: 1px 5px;
+}
+
+#metricContainer {
+  grid-area: metricContainer;
+
+  border: 1px solid blue;
+  // width: 70%;
+  // height: 40%;
+  margin: 1px 5px;
+}
+
+#watchlist {
+  grid-area: watchlist;
+
+  border: 1px solid red;
+  // width: 30%;
+  // height: 100%
+  margin: 1px 5px;
+}
+

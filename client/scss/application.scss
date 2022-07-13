@@ -1,0 +1,14 @@
+@import '_variables';
+@import '_styles';
+
+#app {
+  // border: 1px solid $primary;
+  display: grid;
+  grid-template-areas: "graphContainer graphContainer graphContainer watchlist"
+                       "graphContainer graphContainer graphContainer watchlist"
+                       "metricContainer metricContainer metricContainer watchlist";
+  
+  min-height: 100vh;
+  min-width: 100vw;
+  
+}
