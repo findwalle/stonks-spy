@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import GraphContainer from './containers/GraphContainer.jsx';
-import MetricContainer from './containers/MetricContainer.jsx';
-import Watchlist from './containers/Watchlist.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.jsx';
 
 const App = () => (
-  <div id="app">
-    <GraphContainer />
-    <MetricContainer />
-    <Watchlist />
-  </div>
+  <BrowserRouter>
+    <Routes>
+      <Route path = '/' element = {<Home />} />
+    </Routes>
+  </BrowserRouter>
 );
 
 export default App;

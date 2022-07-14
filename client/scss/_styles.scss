@@ -2,26 +2,83 @@
   grid-area: graphContainer;
 
   border: 1px solid $primary;
+  border-radius: 0.75vw;
   // width: 70%;
   // height: 60%;
-  margin: 1px 5px;
+  margin: 1px 5px 5px 5px;
 }
 
 #metricContainer {
   grid-area: metricContainer;
 
   border: 1px solid blue;
+  border-radius: 0.75vw;
   // width: 70%;
   // height: 40%;
-  margin: 1px 5px;
+  margin: 5px 5px 1px 5px;
 }
 
 #watchlist {
   grid-area: watchlist;
 
   border: 1px solid red;
+  border-radius: 0.75vw;
   // width: 30%;
   // height: 100%
   margin: 1px 5px;
 }
+
+#watchlistSpec {
+  display: grid;
+  grid-template-areas: "ticker l1 l1 l1 l1";
+
+  // border: 1px solid black;
+
+  margin: 0px;
+  padding-left: 1px;
+}
+
+#ticker {
+  grid: ticker;
+  font-weight: bold;
+  text-align: center;
+}
+
+.label {
+  grid-area: l1;
+  font-weight: bold;
+}
+
+.security {
+  display: grid;
+  grid-template-areas: "symbol price price price price";
+
+  // border: 1px solid black;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+.symbol {
+  margin-bottom: 2px;
+  grid-area: symbol;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+
+  width: 100%;
+
+  padding: 0px;
+}
+
+.price {
+  grid-area: price;
+  // border: 1px solid black;
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
 

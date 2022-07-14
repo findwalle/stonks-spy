@@ -1,14 +1,18 @@
 @import '_variables';
 @import '_styles';
 
-#app {
+* {
+  font-family: 'Arial, sans-serif';
+}
+
+#home {
   // border: 1px solid $primary;
   display: grid;
   grid-template-areas: "graphContainer graphContainer graphContainer watchlist"
                        "graphContainer graphContainer graphContainer watchlist"
                        "metricContainer metricContainer metricContainer watchlist";
   
-  min-height: 100vh;
-  min-width: 100vw;
-  
+  min-height: 90vh;
+  min-width: 90vw;
+  margin: 2%;
 }
