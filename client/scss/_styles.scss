@@ -1,27 +1,43 @@
 #graphContainer {
   grid-area: graphContainer;
+  box-shadow: $light-shadow;
+  background-color: $background-tone;
 
-  border: 1px solid $primary;
+  border: 1px solid $secondary;
   border-radius: 0.75vw;
   // width: 70%;
   // height: 60%;
   margin: 1px 5px 5px 5px;
+
+  #graph {
+    margin: 0px;
+    padding: 1.25em;
+  }
 }
 
 #metricContainer {
   grid-area: metricContainer;
+  box-shadow: $light-shadow;
+  background-color: $background-tone;
 
-  border: 1px solid blue;
+  border: 1px solid $secondary;
   border-radius: 0.75vw;
   // width: 70%;
   // height: 40%;
   margin: 5px 5px 1px 5px;
+
+  #metrics {
+    margin: 0px;
+    padding: 1.25em;
+  }
 }
 
-#watchlist {
+#watchlistContainer {
   grid-area: watchlist;
+  box-shadow: $light-shadow;
+  background-color: $background-tone;
 
-  border: 1px solid red;
+  border: 1px solid $secondary;
   border-radius: 0.75vw;
   // width: 30%;
   // height: 100%
@@ -36,18 +52,19 @@
 
   margin: 0px;
   padding-left: 1px;
+
+  #ticker {
+    grid: ticker;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .label {
+    grid-area: l1;
+    font-weight: bold;
+  }
 }
 
-#ticker {
-  grid: ticker;
-  font-weight: bold;
-  text-align: center;
-}
-
-.label {
-  grid-area: l1;
-  font-weight: bold;
-}
 
 .security {
   display: grid;
@@ -57,28 +74,29 @@
 
   margin: 0px;
   padding: 0px;
+
+  .symbol {
+    margin-bottom: 2px;
+    grid-area: symbol;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+  
+    width: 100%;
+  
+    padding: 0px;
+  }
+  
+  .price {
+    grid-area: price;
+    // border: 1px solid black;
+    margin-top: 0px;
+    margin-bottom: 2px;
+  }
 }
 
-.symbol {
-  margin-bottom: 2px;
-  grid-area: symbol;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1em;
-
-  width: 100%;
-
-  padding: 0px;
-}
-
-.price {
-  grid-area: price;
-  // border: 1px solid black;
-  margin-top: 0px;
-  margin-bottom: 2px;
-}
 
 

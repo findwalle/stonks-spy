@@ -25,8 +25,6 @@ const dummyData = [
   {symbol: 'NFLX', company: 'Netflix Inc.', price_open: 175.99, price_high: 176.64, price_low: 172.30, price_close: 172.75}
 ]
 
-const alphaVantageAPI = 'ZH152HF17S83V3D0';
-
 // parse code in reqs 
 app.use(express.json());
 // app.use(express.urlencoded());

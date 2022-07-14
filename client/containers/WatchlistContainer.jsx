@@ -8,11 +8,11 @@ const Watchlist = props => {
 
   // tester code
   for (let i = 0; i < 5; i++) {
-    securities.push(<Security symbol = 'AAPL' price_open = {100} price_high = {105} price_low = {98} price_close = {102}/>)
+    securities.push(<Security symbol = 'AAPL' price_open = {100} price_high = {105} price_low = {98} price_close = {102} key = {i}/>)
   }
 
   return (
-    <div id = 'watchlist'>
+    <div id = 'watchlistContainer'>
       <h2><center>Watchlist</center></h2>
       <div id = 'watchlistSpec'>
         <div>

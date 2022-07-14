@@ -3,7 +3,7 @@ import Metrics from '../components/Metrics.jsx';
 
 const MetricContainer = props => (
   <div id = 'metricContainer'>
-    {/* <Metrics /> */}
+    <Metrics />
   </div>
 );
 
