@@ -8,9 +8,9 @@
 #home {
   // border: 1px solid $primary;
   display: grid;
-  grid-template-areas: "graphContainer graphContainer graphContainer watchlist"
-                       "graphContainer graphContainer graphContainer watchlist"
-                       "metricContainer metricContainer metricContainer watchlist";
+  grid-template-areas: "graphContainer graphContainer graphContainer watchlist watchlist watchlist"
+                       "graphContainer graphContainer graphContainer watchlist watchlist watchlist"
+                       "metricContainer metricContainer metricContainer watchlist watchlist watchlist";
   
   min-height: 90vh;
   min-width: 90vw;

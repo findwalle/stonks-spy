@@ -4,12 +4,14 @@ import GraphContainer from '../containers/GraphContainer.jsx';
 import MetricContainer from '../containers/MetricContainer.jsx';
 import WatchlistContainer from '../containers/WatchlistContainer.jsx';
 
-const Home = () => (
-  <div id="home">
-    <GraphContainer />
-    <MetricContainer />
-    <WatchlistContainer />
-  </div>
-)
+function Home(props) {
+  return (  
+    <div id="home">
+      <GraphContainer stockData = {props.stockData}/>
+      <MetricContainer />
+      <WatchlistContainer updateChart = {props.updateChart}/>
+    </div>
+  )
+  };
 
 export default Home;
